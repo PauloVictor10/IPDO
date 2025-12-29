@@ -49,7 +49,9 @@ Projeto desenvolvido com foco em **rotinas operacionais do setor elétrico**, RP
 
 ## ⚙️ Como executar
 
-### 1️⃣ Script em python roda como tarefa diária no pythonanywhere.
+# ------------------------------
+# RODA DIÁRIAMENTE COMO TAREFA NO pythonanywhere
+# ------------------------------
 
 import requests
 import smtplib
