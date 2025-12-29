@@ -43,10 +43,12 @@ Projeto desenvolvido com foco em **rotinas operacionais do setor elétrico**, RP
 
 ## 📄 Exemplo do PDF IPDO
 
-![PDF IPDO](ipdo.png)
+![PDF IPDO](ipdo.py)
 
 ---
 
 ## ⚙️ Como executar
 
 Roda como tarefa diária no pythonanywhere
+
+![PDF IPDO](ipdo.png)
