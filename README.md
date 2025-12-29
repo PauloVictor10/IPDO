@@ -43,7 +43,7 @@ Projeto desenvolvido com foco em **rotinas operacionais do setor elétrico**, RP
 
 ## 📄 Exemplo do PDF IPDO
 
-![PDF IPDO](ipdo.py)
+![PDF IPDO](ipdo.png)
 
 ---
 
@@ -51,4 +51,4 @@ Projeto desenvolvido com foco em **rotinas operacionais do setor elétrico**, RP
 
 Roda como tarefa diária no pythonanywhere
 
-![PDF IPDO](ipdo.png)
+![PDF IPDO](ipdo.py)
