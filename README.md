@@ -51,4 +51,3 @@ Projeto desenvolvido com foco em **rotinas operacionais do setor elétrico**, RP
 
 Roda como tarefa diária no pythonanywhere
 
-![codigo](ipdo.py)
