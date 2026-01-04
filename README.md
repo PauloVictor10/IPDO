@@ -68,6 +68,6 @@ O robô executa de forma **100% automática em VPS**, sem dependência de comput
 A automação roda em **VPS Linux**, de forma agendada via **cron**:
 
 ```bash
-30 15 * * * python ipdo.py
+0 11 * * * python ipdo.py
 
   
