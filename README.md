@@ -59,7 +59,7 @@ O robô executa de forma **100% automática em VPS**, sem dependência de comput
 
 ## 🗂️ Organização no Google Drive
 
-![Drive IPDO](docs/drive.png)
+![Drive IPDO](drive_ipdo.png)
 
 ---
 
