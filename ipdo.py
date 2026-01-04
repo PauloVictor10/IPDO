@@ -9,6 +9,10 @@ import io
 import re
 from io import BytesIO
 
+import base64
+DRIVE_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxuLH_wgaEojh1fqCWETqACH4rUjkStW1GVLhX_J1eJ9t1hTJo-YNVv3y9_IjqgyP1v/exec"
+
+
 
 # ------------------------------
 # NORMALIZA TEXTO DO PDF
@@ -94,6 +98,32 @@ def extrair_destaques_formatado(pdf_bytes):
     return html
 
 
+# Salvar o Drive#
+
+def salvar_ipdo_no_drive(pdf_bytes, data_ref):
+    ano = data_ref.strftime("%Y")
+    mes = data_ref.strftime("%m")
+    nome_arquivo = f"IPDO-{data_ref.strftime('%d-%m-%Y')}.pdf"
+
+    payload = {
+        "tipo": "IPDO",
+        "ano": ano,
+        "mes": mes,
+        "nome_arquivo": nome_arquivo,
+        "pdf_base64": base64.b64encode(pdf_bytes).decode("utf-8")
+    }
+
+    try:
+        r = requests.post(DRIVE_WEBHOOK_URL, json=payload, timeout=30)
+
+        if r.status_code == 200:
+            print("📁 IPDO salvo no Drive com sucesso.")
+        else:
+            print(f"⚠️ Erro ao salvar IPDO no Drive: {r.status_code}")
+
+    except Exception as e:
+        print(f"⚠️ Falha ao enviar IPDO ao Drive: {e}")
+
 
 # ------------------------------
 # ENVIA O E-MAIL
@@ -124,6 +154,8 @@ def enviar_email():
         pdf_response = requests.get(pdf_url)
 
         if pdf_response.status_code == 200:
+            salvar_ipdo_no_drive(pdf_response.content, ontem)
+
 
             # Extrai o trecho do PDF
             trecho_html = extrair_destaques_formatado(pdf_response.content)
