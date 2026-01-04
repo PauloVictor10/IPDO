@@ -47,13 +47,13 @@ O robô executa de forma **100% automática em VPS**, sem dependência de comput
 
 ## 📧 Exemplo do E-mail Recebido
 
-![E-mail IPDO](docs/gmail.png)
+![E-mail IPDO](gmail.png)
 
 ---
 
 ## 📄 Exemplo do PDF IPDO
 
-![PDF IPDO](docs/ipdo.png)
+![PDF IPDO](ipdo.png)
 
 ---
 
