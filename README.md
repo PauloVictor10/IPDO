@@ -1,54 +1,16 @@
-# 📊 Automação IPDO ONS — Notificação por E-mail
+# 📊 Automação IPDO ONS — Notificação e Arquivamento Automático
 
-Este projeto implementa uma automação em Python responsável por:
+Automação desenvolvida em **Python** para monitorar, processar e distribuir o  
+**IPDO (Informe Diário de Operação)** publicado pelo **ONS**.
 
-- Acessar o site oficial do **ONS**
-- Identificar e baixar automaticamente o **IPDO diário**
-- Ler o PDF e extrair os **Destaques da Operação do Submercado Nordeste**
-- Enviar um **e-mail HTML formatado**, com o resumo e o PDF anexado
-
-Projeto desenvolvido com foco em **rotinas operacionais do setor elétrico**, RPA e automação de alertas.
+O robô executa de forma **100% automática em VPS**, sem dependência de computador local.
 
 ---
 
-## 🧩 Tecnologias utilizadas
+## 🎯 Objetivo da Automação
 
-- Python 3
-- Requests (download do PDF)
-- PyPDF (leitura e extração de texto)
-- Regex avançado para parsing de conteúdo
-- SMTP (envio de e-mail automático)
-- HTML/CSS inline para formatação do e-mail
-
----
-
-## 🔄 Fluxo da automação
-
-1. Consulta o acervo digital do ONS
-2. Baixa automaticamente o IPDO do dia anterior
-3. Localiza a seção **"4 - Destaques da Operação"**
-4. Extrai exclusivamente o trecho do **Submercado Nordeste**
-5. Formata os destaques em HTML profissional
-6. Envia e-mail com:
-   - Resumo automático
-   - PDF IPDO anexado
-
----
-
-## 📧 Exemplo do e-mail recebido
-
-![E-mail IPDO](gmail.png)
-
----
-
-## 📄 Exemplo do PDF IPDO
-
-![PDF IPDO](ipdo.png)
-
----
-
-## ⚙️ Como executar
-
-Roda como tarefa diária no pythonanywhere
-
-![IPDO script](ipdo.py)
+- Baixar automaticamente o **IPDO diário** no site do ONS
+- Extrair os **Destaques da Operação — Submercado Nordeste**
+- Enviar **e-mail HTML profissional** com resumo e PDF anexado
+- Salvar o PDF no **Google Drive**, organizado por:
+  
