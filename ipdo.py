@@ -10,7 +10,7 @@ import re
 from io import BytesIO
 
 import base64
-DRIVE_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxuLH_wgaEojh1fqCWETqACH4rUjkStW1GVLhX_J1eJ9t1hTJo-YNVv3y9_IjqgyP1v/exec"
+DRIVE_WEBHOOK_URL = ""
 
 
 
@@ -132,11 +132,11 @@ def enviar_email():
 
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_PORT = 587
-    EMAIL_USUARIO = 'aplan.notificacoes@gmail.com'
-    EMAIL_SENHA = 'fgzz wibs zpaq ritn'
+    EMAIL_USUARIO = ''
+    EMAIL_SENHA = ''
 
-    DESTINATARIOS = ['paulovictormcarneiro@gmail.com']
-    NOME_REMETENTE = "A-Plan Notificação"
+    DESTINATARIOS = ['']
+    NOME_REMETENTE = ""
 
     hoje = datetime.now()
     ontem = hoje - timedelta(1)
